@@ -1,0 +1,19 @@
+{
+  "name": "intra_arb_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ami_prg",
+  "license": "ISC",
+  "dependencies": {
+    "ccxt": "^1.89.19",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "net": "^1.0.2",
+    "socket.io": "^4.5.1"
+  }
+}
