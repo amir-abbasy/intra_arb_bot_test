@@ -1,13 +1,12 @@
-
 require('dotenv').config()
 
-const markets = require('./markets')
 
 const DURATION = 30000
 
 const express = require(`express`)
 const socketIo = require(`socket.io`)
 const http = require(`http`)
+
 const PORT = process.env.PORT || 4000
 const app = express()
 const server = http.createServer(app)
@@ -28,22 +27,23 @@ io.on(`connection`, (socket) => {
   })
 })
 
-
 setInterval(async () => {
   // io.to(`intra_arb_bot`).emit(`markets`, new Date())
-  
 
-  await makeData((data) => 
-  io.to(`intra_arb_bot`).emit(`markets`, JSON.stringify(markets(data))))
+  await makeData((data) =>
+    io.to(`intra_arb_bot`).emit(`markets`, JSON.stringify(markets(data))),
+  )
 }, DURATION)
 
 
-
-
+app.get('/',(req, res)=>{
+  res.send("Hi.., Intra Arb Bot")
+})
 
 server.listen(PORT, (err) => {
   if (err) console.log(err)
   console.log(`Server running on Port `, PORT)
 })
+
 
 // await makeData((data) => connection.write(JSON.stringify(markets(data))))
