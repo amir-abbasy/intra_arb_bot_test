@@ -7,6 +7,9 @@ const express = require(`express`)
 const socketIo = require(`socket.io`)
 const http = require(`http`)
 
+const makeData = require('./findEx')
+const markets = require('./markets')
+
 const PORT = process.env.PORT || 4000
 const app = express()
 const server = http.createServer(app)
