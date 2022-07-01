@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vercel build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ami_prg",
   "license": "ISC",
