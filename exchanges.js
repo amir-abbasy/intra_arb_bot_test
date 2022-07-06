@@ -1,11 +1,19 @@
 const exchanges = [
   'binance',
+  
   // 'ftx',
-  'bitmart',
+  // 'bitmart',
   // 'huobi',
-  // 'gate',
+  // 'coinbasepro',
+  
+  'gate',
   'wazirx',
-  'coinbasepro',
+  'kucoin',
+  'mexc',
+  'coinex',
+  'cryptocom'
+
+
 ]
 
 module.exports = exchanges

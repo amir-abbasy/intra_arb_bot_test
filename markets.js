@@ -36,8 +36,8 @@ const markets = (array_) => {
   var out_final = []
 
   Object.entries(output).map((_, k) => {
-    var low = { low_exchange: '', price: 0 }
-    var high = { high_exchange: '', price: 0 }
+    var low = {price: 0}
+    var high = {price: 0}
     var isPairable = Object.entries(_[1]).length > 1
 
     isPairable &&
