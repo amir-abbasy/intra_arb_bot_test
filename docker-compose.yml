@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+    intra-exchange-backend:
+        image: intra-exchange-backend:latest
+        volumes:
+            - ./src:/usr/src/app/src
+            - ./.env:/usr/src/app/.env
+        ports:
+            - 7300:7300

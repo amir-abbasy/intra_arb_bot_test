@@ -7,7 +7,7 @@ const exchanges = [
   // 'coinbasepro',
   
   'gate',
-  'wazirx',
+  // 'wazirx',
   'kucoin',
   'mexc',
   'coinex',

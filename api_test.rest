@@ -1,0 +1,22 @@
+@baseUrl = http://127.0.0.1:7300
+GET  {{baseUrl}}
+###
+
+POST {{baseUrl}}/entry/login 
+Content-Type: application/json
+
+{
+"username": "amir",
+"password": "123456"
+}
+###
+
+
+POST {{baseUrl}}/entry/register 
+Content-Type: application/json
+
+{
+"username": "amir",
+"password": "123456"
+}
+###

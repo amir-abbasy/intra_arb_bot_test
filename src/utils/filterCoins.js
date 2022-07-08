@@ -1,4 +1,4 @@
-const duplicate_currencies = require('./duplicate_currencies.json')
+const duplicate_currencies = require('../duplicate_currencies.json')
 
 const filterCoins = (coins = [], removeSLcoins = true) => {
   var terms = ['3S', '3L', '5S', '5L']

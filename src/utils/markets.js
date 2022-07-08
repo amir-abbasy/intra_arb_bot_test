@@ -1,8 +1,8 @@
 // const array_ = require('./dataSet.json')
 
-const config = require('./config')
+const config = require('../config')
 
-const keys = require('./exchanges')
+const keys = require('../exchanges')
 // var keys = ['binance', 'wazirx']
 
 const markets = (array_) => {

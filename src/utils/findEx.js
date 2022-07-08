@@ -1,7 +1,7 @@
 'use strict'
 const ccxt = require('ccxt')
 
-const exchanges = require('./exchanges')
+const exchanges = require('../exchanges')
 
 
 async function makeData(callback) {
